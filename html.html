@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My site</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        
+        <!-- <script>
+            var canvas=document.getElementById("myCanvas");
+            //make variable ctx a pen 
+            var ctx=canvas.getContext("2d");
+            //fill rectangle with red
+            ctx.fillStyle="red";
+            //draw rectengle from 0,0
+            ctx.fillRect(0,0,30,30);
+            //draw a line from 30,0 to 60,30
+            ctx.moveTo(30,0);
+            ctx.lineTo(60,30);
+            //fill line stroke
+            ctx.stroke();
+            //draw a circle
+            ctx.beginPath();
+            ctx.arc(80, 30, 40, 0, 6.6);
+            ctx.stroke();
+        </script> -->
+
+        <canvas id="myF" width="600" height = "600"></canvas>
+        <script>
+            var canvas=document.getElementById("myF");
+            var pen=canvas.getContext("2d");
+            pen.beginPath();
+            pen.arc(300,300,300,0,6.6);
+            pen.stroke();
+            
+            pen.fillStyle="red";
+            pen.fillRect(100,105,190,190);
+            
+            pen.fillStyle="green";
+            pen.fillRect(300,105,190,190);
+
+            pen.fillStyle="blue";
+            pen.fillRect(100,305,190,190);
+
+            pen.fillStyle="yellow";
+            pen.fillRect(300,305,190,190)
+        </script>
+        <div class="pen"> 
+            Microsoft
+        </div>
+    </body>
+</html>                                           
